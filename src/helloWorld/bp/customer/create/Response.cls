@@ -1,14 +1,14 @@
-Class helloWorld.bo.math.sum.Response Extends Ens.Response
+Class helloWorld.bp.customer.create.Response Extends Ens.Response
 {
 
-Property Result As %Library.Numeric;
+Property Customer As helloWorld.obj.customers.Customer;
 
 Storage Default
 {
 <Data name="ResponseDefaultData">
 <Subscript>"Response"</Subscript>
 <Value name="1">
-<Value>Result</Value>
+<Value>customer</Value>
 </Value>
 </Data>
 <DefaultData>ResponseDefaultData</DefaultData>
