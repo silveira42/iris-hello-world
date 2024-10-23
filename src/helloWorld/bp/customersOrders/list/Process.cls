@@ -3,19 +3,20 @@ Class helloWorld.bp.customersOrders.list.Process Extends Ens.BusinessProcess
 
 Method OnRequest(pRequest As helloWorld.bp.customersOrders.list.Request, Output pResponse As helloWorld.bp.customersOrders.list.Response) As %Library.Status
 {
-    Try {
+    Try 
+    {
         Do pRequest.NewResponse(.pResponse)
-    } Catch (exception) {
+    } Catch (exception) 
+    {
         $$$LOGERROR("Error generating response at OnRequest method: " _ exception.DisplayString())
         Return exception.AsStatus()
     }
 
     Set customerRequest = ##class(helloWorld.bo.customers.list.Request).%New()
-    Set orderRequest = ##class(helloWorld.bo.orders.list.Request).%New()
-
     $$$ThrowOnError(..SendRequestSync("Customers", customerRequest, .customerResponse))
     #Dim customerResponse As helloWorld.bo.customers.list.Response
 
+    Set orderRequest = ##class(helloWorld.bo.orders.list.Request).%New()
     $$$ThrowOnError(..SendRequestSync("Orders", orderRequest, .orderResponse))
     #Dim orderResponse As helloWorld.bo.orders.list.Response
 

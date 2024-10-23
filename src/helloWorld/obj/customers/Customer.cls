@@ -2,9 +2,7 @@ Class helloWorld.obj.customers.Customer Extends (%Library.SerialObject, %XML.Ada
 {
 
 Property Id As %Library.String;
-
 Property Name As %Library.String;
-
 Property Document As %Library.String;
 
 Storage Default

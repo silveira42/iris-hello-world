@@ -2,15 +2,10 @@ Class helloWorld.bs.starter.Service Extends Ens.BusinessService
 {
 
 Parameter SETTINGS = "BusinessProcessName:Basic,BusinessProcessRequestClass:Basic,IsAsync:Basic";
-
 Parameter ADAPTER = "Ens.InboundAdapter";
-
 Property Adapter As Ens.InboundAdapter;
-
 Property BusinessProcessName As %Library.String(MAXLEN = "");
-
 Property BusinessProcessRequestClass As %Library.String(MAXLEN = "");
-
 Property IsAsync As %Library.Boolean [ InitialExpression = 1 ];
 
 Method OnProcessInput(pRequest As helloWorld.bs.starter.Request, Output pResponse As helloWorld.bs.starter.Response) As %Library.Status

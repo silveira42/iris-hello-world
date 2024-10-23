@@ -2,11 +2,8 @@ Class helloWorld.bs.customersOrders.list.Service Extends Ens.BusinessService
 {
 
 Parameter SETTINGS = "IsAsync:Basic";
-
 Parameter ADAPTER = "Ens.InboundAdapter";
-
 Property Adapter As Ens.InboundAdapter;
-
 Property IsAsync As %Library.Boolean [ InitialExpression = 1 ];
 
 Method OnProcessInput(pRequest As helloWorld.bs.customersOrders.list.Request, Output pResponse As helloWorld.bs.customersOrders.list.Response) As %Library.Status

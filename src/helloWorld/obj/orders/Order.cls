@@ -2,13 +2,9 @@ Class helloWorld.obj.orders.Order Extends (%Library.SerialObject, %XML.Adaptor, 
 {
 
 Property Id As %Library.String;
-
 Property Details As %Library.String;
-
 Property ProductId As %Library.String;
-
 Property Quantity As %Library.Integer;
-
 Property CustomerId As %Library.String;
 
 Storage Default
