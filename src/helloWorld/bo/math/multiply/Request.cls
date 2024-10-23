@@ -2,9 +2,7 @@ Class helloWorld.bo.math.multiply.Request Extends Ens.Request
 {
 
 Parameter RESPONSECLASSNAME = "helloWorld.bo.math.multiply.Response";
-
 Property A As %Library.Numeric;
-
 Property B As %Library.Numeric;
 
 Storage Default

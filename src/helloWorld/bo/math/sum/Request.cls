@@ -2,9 +2,7 @@ Class helloWorld.bo.math.sum.Request Extends Ens.Request
 {
 
 Parameter RESPONSECLASSNAME = "helloWorld.bo.math.sum.Response";
-
 Property A As %Library.Numeric;
-
 Property B As %Library.Numeric;
 
 Storage Default

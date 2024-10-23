@@ -2,7 +2,6 @@ Class helloWorld.bo.orders.Operation Extends Ens.BusinessOperation
 {
 
 Parameter ADAPTER = "EnsLib.HTTP.OutboundAdapter";
-
 Property Adapter As EnsLib.HTTP.OutboundAdapter;
 
 XData MessageMap

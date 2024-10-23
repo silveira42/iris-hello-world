@@ -5,7 +5,8 @@ Class helloWorld.bo.math.multiply.Method [ Abstract ]
 
 ClassMethod Execute(pHost As helloWorld.bo.math.Operation, pRequest As helloWorld.bo.math.multiply.Request, Output pResponse As helloWorld.bo.math.multiply.Response) As %Library.Status
 {
-    Try {
+    Try 
+    {
         Do pRequest.NewResponse(.pResponse)
     } Catch (exception) {
         $$$LOGERROR("Error generating response at Multiply method: " _ exception.DisplayString())
