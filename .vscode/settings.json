@@ -29,7 +29,7 @@
     ],
     "github.branchProtection": true,
     // Configurações do ObjectScript
-    "intersystems.testingManager.client.relativeTestRoot": "internal/testing/unittests",
+    "intersystems.testingManager.client.relativeTestRoot": "src/internal/testing/unittests",
     "[objectscript-class]": {
         "editor.defaultFormatter": "intersystems.language-server"
     },

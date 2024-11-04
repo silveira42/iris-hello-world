@@ -17,7 +17,7 @@ ClassMethod Execute(pHost As helloWorld.bo.customers.Operation, pRequest As hell
 	Set httpRequest.ContentCharset	= "UTF-8"
 	Set httpRequest.ContentType		= "application/json"
 
-    Set url = "https://run.mocky.io/v3/b780cff1-b40c-484f-95c4-ba44e1b78be5"
+    Set url = "https://run.mocky.io/v3/23b29c63-8412-4c90-b63f-9f116ed72f60"
 
     Try {
         $$$ThrowOnError(pHost.Adapter.SendFormDataArray(.httpResponse, "GET", httpRequest , "", , url))
