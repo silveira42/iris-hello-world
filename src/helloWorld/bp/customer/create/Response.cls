@@ -10,6 +10,9 @@ Storage Default
 <Value name="1">
 <Value>customer</Value>
 </Value>
+<Value name="2">
+<Value>Customer</Value>
+</Value>
 </Data>
 <DefaultData>ResponseDefaultData</DefaultData>
 <Type>%Storage.Persistent</Type>
