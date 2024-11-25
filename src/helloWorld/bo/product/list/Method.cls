@@ -39,7 +39,7 @@ ClassMethod Execute(pHost As helloWorld.bo.product.Operation, pRequest As helloW
     Set iterator = dynamicResponse.%GetIterator()
     While iterator.%GetNext(.key, .value)
     {
-        Set product = ##class(helloWorld.obj.product.product).%New()
+        Set product = ##class(helloWorld.obj.product.Product).%New()
 
         Set product.Id = value.Id
         Set product.Details = value.Details

@@ -5,5 +5,16 @@ Parameter RESPONSECLASSNAME = "helloWorld.bo.customers.create.Response";
 
 Property Customer As helloWorld.obj.customers.Customer;
 
+Storage Default
+{
+<Data name="RequestDefaultData">
+<Subscript>"Request"</Subscript>
+<Value name="1">
+<Value>Customer</Value>
+</Value>
+</Data>
+<DefaultData>RequestDefaultData</DefaultData>
+<Type>%Storage.Persistent</Type>
+}
 
 }

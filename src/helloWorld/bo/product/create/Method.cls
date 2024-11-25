@@ -42,7 +42,7 @@ ClassMethod Execute(pHost As helloWorld.bo.product.Operation, pRequest As helloW
         Return exception.AsStatus()
     }
 
-    Set product = ##class(helloWorld.obj.product.product).%New()
+    Set product = ##class(helloWorld.obj.product.Product).%New()
 
     Set product.Id = dynamicResponse.Id
     Set product.Details = dynamicResponse.Details
